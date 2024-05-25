@@ -80,7 +80,15 @@ model.compile(optimizer='adam',
 model.fit(x_train,y_train,epochs=10,
           batch_size=2000,
           validation_split=0.2)              
-          
-          
+
+
+#Results of the model
+
+results = model.evaluate(x_test,  y_test, verbose = 0) 
+print('test loss, test acc:', results)  
+
+
+
+
 #This model is programmed by Dev Kumar.          
                                                                  
